@@ -31,8 +31,8 @@ npm install config-path
 3. **Initialize ConfigPath:**
 
    ```javascript
-   const ConfigPath = require('config-path-library-name'); // Replace with your actual library name
-   const configPath = new ConfigPath('/path/to/your/config/directory');
+   const ConfigPath = require('config-path'); // Replace with your actual library name
+   const configPath = new ConfigPath('./config');
    const settings = configPath.get();
    ```
 
