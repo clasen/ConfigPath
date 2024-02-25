@@ -1,8 +1,7 @@
 const fs = require("fs");
 const os = require("os");
 const obj = require("lodash/object");
-const LemonLog = require("lemonlog");
-const log = new LemonLog("Configre");
+const log = require("lemonlog")("Configre");
 
 class ConfigreClass {
     constructor(path) {

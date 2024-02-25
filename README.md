@@ -79,7 +79,7 @@ Configre merges these configurations based on your environment, making your app 
 - **Clarity and Convenience**: Keep your configuration organized and easy to understand.
 - **Flexibility**: Supports dynamic configuration values for complex setups.
 
-## 🤝Contribute 
+## 🤝 Contribute 
 
 Found a bug or have a feature request? Contributions are welcome! Feel free to open an issue or submit a pull request.
 
