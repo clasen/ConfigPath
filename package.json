@@ -1,6 +1,45 @@
 {
   "dependencies": {
-    "lemonlog": "^1.0.1",
+    "lemonlog": "^1.0.2",
     "lodash": "^4.17.21"
+  },
+  "name": "config-path",
+  "description": "Welcome to **ConfigPath**, your go-to library for managing configuration files in Node.js applications with ease and flexibility! Whether you're working on a development project or gearing up for production, ConfigPath helps you handle environment-specific settings like a boss. 🌟",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clasen/ConfigPath.git"
+  },
+  "keywords": [
+    "json",
+    "config",
+    "setup",
+    "deployment",
+    "configuration",
+    "convention",
+    "stage",
+    "environment",
+    "development",
+    "production",
+    "inheritance",
+    "objects",
+    "user-friendly",
+    "intuitive"
+  ],
+  "author": "Martin Clasen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clasen/ConfigPath/issues"
+  },
+  "homepage": "https://github.com/clasen/ConfigPath#readme",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  },
+  "directories": {
+    "test": "test"
   }
 }

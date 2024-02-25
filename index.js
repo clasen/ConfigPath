@@ -4,9 +4,9 @@ const obj = require("lodash/object");
 const LemonLog = require("lemonlog");
 const log = new LemonLog("ConfigPath");
 
-class ConfigPath {
+class ConfigPathClass {
     constructor(path) {
-        this.defaultSettings = require("./config/default.js");
+        this.defaultSettings = require(path);
         this.dirname = path;
         this.profile = process.argv.length > 2 ? process.argv[2] : os.hostname();
         this.devFile = `${this.dirname}/${this.profile}.dev.js`;
@@ -29,6 +29,15 @@ class ConfigPath {
 
     get() {
         return obj.merge({}, this.defaultSettings, this.profileSettings);
+    }
+}
+
+// Wrapper function to support both constructor and function usage
+function ConfigPath(path) {
+    if (this instanceof ConfigPath) {
+        return new ConfigPathClass(path);
+    } else {
+        return new ConfigPathClass(path).get();
     }
 }
 
