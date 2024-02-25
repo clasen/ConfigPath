@@ -1,18 +1,14 @@
 {
+  "name": "configre",
   "dependencies": {
     "lemonlog": "^1.0.2",
     "lodash": "^4.17.21"
   },
-  "name": "config-path",
-  "description": "Welcome to ConfigPath, the coolest way to manage your project's configuration with a twist of personality based on your environment! Whether you're in development, testing, or production, ConfigPath seamlessly adjusts to your project's needs by loading specific configurations tailored to each environment. Say goodbye to manual config tweaks and hello to automatic, hassle-free setup! 🚀",
+  "description": "Welcome to Configre, the coolest way to manage your project's configuration with a twist of personality based on your environment! Whether you're in development, testing, or production, Configre seamlessly adjusts to your project's needs by loading specific configurations tailored to each environment. Say goodbye to manual config tweaks and hello to automatic, hassle-free setup! 🚀",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/clasen/ConfigPath.git"
   },
   "keywords": [
     "json",
@@ -32,10 +28,14 @@
   ],
   "author": "Martin Clasen",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/clasen/ConfigPath/issues"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clasen/Configre.git"
   },
-  "homepage": "https://github.com/clasen/ConfigPath#readme",
+  "bugs": {
+    "url": "https://github.com/clasen/Configre/issues"
+  },
+  "homepage": "https://github.com/clasen/Configre#readme",
   "devDependencies": {
     "mocha": "^10.2.0"
   },

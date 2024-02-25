@@ -2,9 +2,9 @@ const fs = require("fs");
 const os = require("os");
 const obj = require("lodash/object");
 const LemonLog = require("lemonlog");
-const log = new LemonLog("ConfigPath");
+const log = new LemonLog("Configre");
 
-class ConfigPathClass {
+class ConfigreClass {
     constructor(path) {
         this.defaultSettings = require(path);
         this.dirname = path;
@@ -33,12 +33,12 @@ class ConfigPathClass {
 }
 
 // Wrapper function to support both constructor and function usage
-function ConfigPath(path) {
-    if (this instanceof ConfigPath) {
-        return new ConfigPathClass(path);
+function Configre(path) {
+    if (this instanceof Configre) {
+        return new ConfigreClass(path);
     } else {
-        return new ConfigPathClass(path).get();
+        return new ConfigreClass(path).get();
     }
 }
 
-module.exports = ConfigPath;
+module.exports = Configre;

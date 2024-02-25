@@ -1,6 +1,6 @@
-# 💾 ConfigPath
+# 🚒 Configre
 
-Welcome to ConfigPath, the coolest way to manage your project's configuration with a twist of personality based on your environment! Whether you're in development, testing, or production, ConfigPath seamlessly adjusts to your project's needs by loading specific configurations tailored to each environment. Say goodbye to manual config tweaks and hello to automatic, hassle-free setup! 🚀
+Welcome to Configre, the coolest way to manage your project's configuration with a twist of personality based on your environment! Whether you're in development, testing, or production, Configre seamlessly adjusts to your project's needs by loading specific configurations tailored to each environment. Say goodbye to manual config tweaks and hello to automatic, hassle-free setup! 🚀
 
 ## ✨ Features
 
@@ -11,14 +11,14 @@ Welcome to ConfigPath, the coolest way to manage your project's configuration wi
 
 ## 🌟 Getting Started
 
-To get started with ConfigPath, follow these steps:
+To get started with Configre, follow these steps:
 
 1. **Install the Library**
 
-   First, make sure you have `Node.js` installed. Then, add ConfigPath to your project:
+   First, make sure you have `Node.js` installed. Then, add Configre to your project:
 
    ```bash
-   npm install configpath --save
+   npm install Configre --save
    ```
 
 2. **Setup Your Configuration Files**
@@ -29,12 +29,12 @@ To get started with ConfigPath, follow these steps:
    - `[hostname].js`: Override configurations for specific hosts.
    - `[hostname].dev.js`: Development-specific configurations.
 
-3. **Use ConfigPath in Your Project**
+3. **Use Configre in Your Project**
 
-   Import and use ConfigPath to load your configurations:
+   Import and use Configre to load your configurations:
 
    ```javascript
-   const cfg = require("configpath")(__dirname + "/config");
+   const cfg = require("Configre")(__dirname + "/config");
    console.log(cfg.db); // Access your db configuration
    ```
 
@@ -71,9 +71,9 @@ module.exports = {
 }
 ```
 
-ConfigPath merges these configurations based on your environment, making your app adaptable and easier to manage.
+Configre merges these configurations based on your environment, making your app adaptable and easier to manage.
 
-## 🤔 Why ConfigPath?
+## 🤔 Why Configre?
 
 - **No More Manual Switching**: Automatically adjusts your configuration based on the environment.
 - **Clarity and Convenience**: Keep your configuration organized and easy to understand.
@@ -83,7 +83,7 @@ ConfigPath merges these configurations based on your environment, making your ap
 
 Found a bug or have a feature request? Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-Let's make ConfigPath even better, together! 🎉
+Let's make Configre even better, together! 🎉
 
 ## 📄 License
 
