@@ -1,44 +1,51 @@
 # 💾 ConfigPath
 
-Welcome to **ConfigPath**, your go-to library for managing configuration files in Node.js applications with ease and flexibility! Whether you're working on a development project or gearing up for production, ConfigPath helps you handle environment-specific settings like a boss. 🌟
+Welcome to ConfigPath, the coolest way to manage your project's configuration with a twist of personality based on your environment! Whether you're in development, testing, or production, ConfigPath seamlessly adjusts to your project's needs by loading specific configurations tailored to each environment. Say goodbye to manual config tweaks and hello to automatic, hassle-free setup! 🚀
 
-## Features
+## ✨ Features
 
-- 🕵️‍♂️ **Automatic Environment Detection**: Automatically selects the right configuration based on your environment or the hostname of your machine.
-- 🛠️ **Development & Production Support**: Supports separate configuration files for development (`*.dev.js`) and production (`*.js`).
-- 📋 **Easy Defaults**: Integrates seamlessly with default settings to ensure your app always has the necessary configurations.
+- **Environment-Specific Configurations**: Automatically loads configurations based on the hostname or a custom profile passed via command line arguments.
+- **Fallback to Defaults**: Uses a default configuration as a baseline, ensuring your application always has the necessary settings.
+- **Easy Integration**: A simple setup process that integrates effortlessly into any project.
+- **Support for `.js` Config Files**: Allows for dynamic configuration values and comments for better clarity.
 
-## Getting Started
+## 🌟 Getting Started
 
-### Installation
+To get started with ConfigPath, follow these steps:
 
-Install ConfigPath with npm:
+1. **Install the Library**
 
-```bash
-npm install config-path
-```
+   First, make sure you have `Node.js` installed. Then, add ConfigPath to your project:
 
-### Usage
-
-1. **Set Up Your Configuration Files:**
-
-   Place your configuration files in a designated directory. Name them according to your environment or hostname, for example, `myapp.dev.js` for development and `myapp.js` for production.
-
-2. **Default Configuration:**
-
-   Create a `default.js` file in your configuration directory with common settings that apply to all environments.
-
-3. **Initialize ConfigPath:**
-
-   ```javascript
-   const ConfigPath = require('config-path'); // Replace with your actual library name
-   const configPath = new ConfigPath('./config');
-   const settings = configPath.get();
+   ```bash
+   npm install configpath --save
    ```
 
-   Now, `settings` will contain a merged object of your default settings and the environment-specific settings.
+2. **Setup Your Configuration Files**
 
-### Example Configuration File (`myapp.dev.js`)
+   Organize your configuration files within a directory (e.g., `config`). Create a default configuration file and environment-specific files as needed.
+
+   - `index.js`: Your default configuration.
+   - `[hostname].js`: Override configurations for specific hosts.
+   - `[hostname].dev.js`: Development-specific configurations.
+
+3. **Use ConfigPath in Your Project**
+
+   Import and use ConfigPath to load your configurations:
+
+   ```javascript
+   const cfg = require("configpath")(__dirname + "/config");
+   console.log(cfg.db); // Access your db configuration
+   ```
+
+## 📚 Example
+
+Imagine you have the following structure in your `config` directory:
+
+- `index.js`: Contains default settings.
+- `myhostname.js`: Contains overrides for the host named `myhostname`.
+
+Your `index.js` might look like this:
 
 ```javascript
 module.exports = {
@@ -50,18 +57,36 @@ module.exports = {
     api: {
         key: 'development-api-key'
     }
-};
+}
 ```
 
-## Documentation
+And your `myhostname.js`:
 
-...
+```javascript
+module.exports = {
+    db: {
+        user: 'john',
+        password: 'johns-password'
+    }
+}
+```
 
-## 🤝 Contributing
+ConfigPath merges these configurations based on your environment, making your app adaptable and easier to manage.
 
-Love ConfigPath and want to contribute? Awesome! 🎉 Feel free to open an issue or submit a pull request.
+## 🤔 Why ConfigPath?
+
+- **No More Manual Switching**: Automatically adjusts your configuration based on the environment.
+- **Clarity and Convenience**: Keep your configuration organized and easy to understand.
+- **Flexibility**: Supports dynamic configuration values for complex setups.
+
+## 🤝Contribute 
+
+Found a bug or have a feature request? Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+Let's make ConfigPath even better, together! 🎉
 
 ## 📄 License
+
 The MIT License (MIT)
 
 Copyright (c) Martin Clasen

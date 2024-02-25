@@ -4,7 +4,7 @@
     "lodash": "^4.17.21"
   },
   "name": "config-path",
-  "description": "Welcome to **ConfigPath**, your go-to library for managing configuration files in Node.js applications with ease and flexibility! Whether you're working on a development project or gearing up for production, ConfigPath helps you handle environment-specific settings like a boss. 🌟",
+  "description": "Welcome to ConfigPath, the coolest way to manage your project's configuration with a twist of personality based on your environment! Whether you're in development, testing, or production, ConfigPath seamlessly adjusts to your project's needs by loading specific configurations tailored to each environment. Say goodbye to manual config tweaks and hello to automatic, hassle-free setup! 🚀",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
