@@ -1,6 +1,6 @@
 {
   "name": "configre",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "🔧 Effortlessly Tailor Your Settings",
   "dependencies": {
     "lemonlog": "^1.0.2",
