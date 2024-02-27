@@ -1,4 +1,4 @@
-# 🚒 Configre
+# 🔧 Configres
 
 Welcome to Configre, the coolest way to manage your project's configuration with a twist of personality based on your environment! Whether you're in development, testing, or production, Configre seamlessly adjusts to your project's needs by loading specific configurations tailored to each environment. Say goodbye to manual config tweaks and hello to automatic, hassle-free setup! 🚀
 
