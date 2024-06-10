@@ -18,7 +18,7 @@ To get started with Configre, follow these steps:
    First, make sure you have `Node.js` installed. Then, add Configre to your project:
 
    ```bash
-   npm install Configre --save
+   npm install configre --save
    ```
 
 2. **Setup Your Configuration Files**
@@ -34,7 +34,7 @@ To get started with Configre, follow these steps:
    Import and use Configre to load your configurations:
 
    ```javascript
-   const cfg = require("Configre")(__dirname + "/config");
+   const cfg = require("Configre")(); // default dir '/config'
    console.log(cfg.db); // Access your db configuration
    ```
 

@@ -4,7 +4,7 @@ const obj = require("lodash/object");
 const log = require("lemonlog")("Configre");
 
 class ConfigreClass {
-    constructor(path) {
+    constructor(path = __dirname + "/../../config") {
         this.defaultSettings = require(path);
         this.dirname = path;
         this.profile = process.argv.length > 2 ? process.argv[2] : os.hostname();
